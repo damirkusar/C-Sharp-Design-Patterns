@@ -1,0 +1,24 @@
+﻿Definition
+
+Decouple an abstraction from its implementation so that the two can vary independently.
+
+Frequency of use: Medium
+
+
+
+
+The classes and objects participating in this pattern are:
+
+Abstraction   (Printer)
+- defines the abstraction's interface.
+- maintains a reference to an object of type Implementor.
+
+RefinedAbstraction   (Epson)
+- extends the interface defined by Abstraction.
+
+Implementor   (PrinterFormat)
+- defines the interface for implementation classes. This interface doesn't have to correspond exactly to Abstraction's interface; in fact the two interfaces can be quite different. 
+- Typically the Implementation interface provides only primitive operations, and Abstraction defines higher-level operations based on these primitives.
+
+ConcreteImplementor   (HtmlFormat, PlainTextFormat)
+- implements the Implementor interface and defines its concrete implementation.

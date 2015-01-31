@@ -1,0 +1,26 @@
+﻿Definition
+
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
+
+Frequency of use: High
+
+
+
+
+The classes and objects participating in this pattern are:
+
+AbstractFactory  (CastleFactory)
+- declares an interface for operations that create abstract products
+
+ConcreteFactory   (HaiwaCastle, KatanaCastle)
+- implements the operations to create concrete product objects
+
+AbstractProduct   (Attacker, Defender)
+- declares an interface for a type of product object
+
+Product  (Ninjas, Orks, Pirates, Samurai, Golumns)
+- defines a product object to be created by the corresponding concrete factory
+- implements the AbstractProduct interface
+
+Client  (Battle)
+- uses interfaces declared by AbstractFactory and AbstractProduct classes

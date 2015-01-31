@@ -1,0 +1,19 @@
+﻿Definition
+
+Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype.
+
+Frequency of use: Medium
+
+
+
+
+The classes and objects participating in this pattern are:
+
+Prototype  (FighterPrototype)
+- declares an interface for cloning itself
+
+ConcretePrototype  (Ninja, Samurai)
+- implements an operation for cloning itself
+
+Client  (MainFunction)
+- creates a new object by asking a prototype to clone itself
